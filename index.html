@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                background: color(display-p3 0.18 0.18 0.18);
+            }
+
+            body {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .checker {
+                flex: 1;
+                padding: 10%;
+                aspect-ratio: 2 / 1;
+
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10% 5%;
+                align-content: center;
+                justify-content: stretch;
+            }
+
+            .checker > * {
+                aspect-ratio: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="checker">
+            <div style="background: color(display-p3 1 0 0);"></div>
+            <div style="background: color(display-p3 0 1 0);"></div>
+            <div style="background: color(display-p3 0 0 1);"></div>
+            <div style="background: color(display-p3 1 1 0);"></div>
+            <div style="background: color(display-p3 0 1 1);"></div>
+            <div style="background: color(display-p3 1 0 1);"></div>
+            <div style="background: color(display-p3 1 1 1);"></div>
+            <div style="background: color(display-p3 0 0 0);"></div>
+        </div>
+    </body>
+</html>
